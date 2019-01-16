@@ -1,0 +1,25 @@
+<html>
+<title>Do You Love Me</title>
+<head>
+</head>
+<body>
+	<p> Do You Love ME ? </p>
+	<button id ='yes'onclick = 'clickYes()' style = 'width:30px'>Yes</button>
+	<button id = 'no'onclick = 'clickNo()' style = 'position:absolute; width: 30px'>No</button>
+<script type="text/javascript">
+	var Yes=document.getElementById('yes');
+	function clickYes(){
+		alert('ahihi');
+	}
+	function clickNo(){
+		//lấy giá trị click No
+		var No = document.getElementById('no');
+		//lấy những số ngẫu nhiên trong khoảng 500
+		var x = (Math.random() * 500);
+		//gán giá trị ngẫu nhiên vào nút bấm dưới dạng pixel
+		No.style.top = x +'px';
+		No.style.left = x + 'px';
+	}
+</script>	
+</body>
+</html>
